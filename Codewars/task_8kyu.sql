@@ -19,5 +19,27 @@ SELECT MOD(number1, number2) as mod from decimals;
 
 /*3-task*/
 
-SELECT SQRT(number1) as root, LOG10(2) as log FROM decimals;
+SELECT SQRT(number1) as root, LOG10(number2) as log FROM decimals;
+
+/* Return a table with two columns (number1, number2), the value in number1 should be rounded down and the value in number2 should be rounded up.*/
+
+/*4-task*/
+
+/*
+Округление к ближайшему целому:
+SELECT ROUND(число) FROM таблица;
+
+Округление всегда в меньшую сторону (вниз):
+SELECT FLOOR(число) FROM таблица;
+
+Округление всегда в большую сторону (вверх):
+SELECT CEIL(число) FROM таблица;
+
+Усечение числа до указанного количества десятичных знаков (округление к ближайшему нулю):
+SELECT TRUNC(число, количество_десятичных_знаков) FROM таблица;
+
+Округление к указанному количеству десятичных знаков:
+SELECT ROUND(число, количество_десятичных_знаков) FROM таблица;*/
+
+SELECT FLOOR(number1) as number1, CEIL(number2) as number2 FROM decimals;
 
