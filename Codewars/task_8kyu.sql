@@ -51,4 +51,10 @@ select id, name, birthday,lower(race) as race from demographics;
 
 /*lower and upper*/
 
+/* Your task is to sort the information in the provided table 'companies' by number of employees (high to low)*/
+
+/*6-task*/
+
+SELECT id, ceo, motto, employees FROM companies
+order by employees desc;
 
