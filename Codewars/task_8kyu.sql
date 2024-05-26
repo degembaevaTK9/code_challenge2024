@@ -43,3 +43,12 @@ SELECT ROUND(число, количество_десятичных_знаков)
 
 SELECT FLOOR(number1) as number1, CEIL(number2) as number2 FROM decimals;
 
+/* you need to return the same table where all letters are lowercase in the race column.*/
+
+/*5-task*/
+
+select id, name, birthday,lower(race) as race from demographics;
+
+/*lower and upper*/
+
+
